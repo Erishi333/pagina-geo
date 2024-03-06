@@ -1,0 +1,203 @@
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  padding: 0 20px;
+  position: relative;
+}
+
+.navbar ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  left: 0;
+}
+
+.navbar ul li:hover ul {
+  display: block;
+}
+
+.navbar ul li ul li {
+  padding: 5px 10px;
+}
+
+.navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #6c757d;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 960px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+}
+
+/* Encabezado y pie de página */
+.header,
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Opciones y botones */
+.option {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.option:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Contenedor de tarjetas */
+.info-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.option {
+  padding: 12px 25px;
+}
+
+.image {
+  max-width: 30%;
+}
+
+/* Botón Empezar */
+#start-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+#start-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Resto del contenido CSS */
+
+#tips {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#tips .header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#tips .tips-container ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+/* Estilos para el foro de discusiones */
+
+#foro-discusiones {
+    margin-top: 50px;
+}
+
+.foro-container {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.nuevo-mensaje {
+    background-color: #f8f9fa;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.nuevo-mensaje textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.nuevo-mensaje button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nuevo-mensaje button:hover {
+    background-color: #0056b3;
+}
